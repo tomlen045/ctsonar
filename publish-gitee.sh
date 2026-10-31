@@ -2,7 +2,7 @@
 # ctsonar Gitee 发布脚本（token 从既有仓库 remote 提取，不回显）
 set -e
 cd "$(dirname "$0")"
-GIT=/Applications/Xcode.app/Contents/Developer/usr/bin/git
+GIT="${GIT:-$(command -v git || echo /usr/bin/git)}"
 
 TOKEN=$(python3 - <<'EOF'
 import re, os

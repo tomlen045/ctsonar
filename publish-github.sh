@@ -2,7 +2,7 @@
 # ctsonar GitHub 镜像发布（token 从钥匙串读，不回显）
 set -e
 cd "$(dirname "$0")"
-GIT=/Applications/Xcode.app/Contents/Developer/usr/bin/git
+GIT="${GIT:-$(command -v git || echo /usr/bin/git)}"
 
 GH_TOKEN=$(security find-generic-password -s GH_TOKEN -w 2>/dev/null)
 [ -n "$GH_TOKEN" ] || { echo "no GH_TOKEN in keychain"; exit 1; }
