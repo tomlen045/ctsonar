@@ -1,7 +1,7 @@
 #!/bin/sh
 # ctsonar 一键安装：下载单文件到 /usr/local/bin（或 PREFIX 指定的目录）
 set -e
-REPO_RAW="https://gcore.jsdelivr.net/gh/tomlen/ctsonar@main/ctsonar.py"
+REPO_RAW="https://gcore.jsdelivr.net/gh/tomlen045/ctsonar@main/ctsonar.py"
 PREFIX="${PREFIX:-/usr/local/bin}"
 
 command -v python3 >/dev/null 2>&1 || { echo "python3 required"; exit 1; }

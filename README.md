@@ -32,7 +32,7 @@ echo exit=$?    # 1 = 高危变化
 python3 ctsonar.py scan
 
 # 或一键安装到 /usr/local/bin
-curl -fsSL https://gcore.jsdelivr.net/gh/tomlen/ctsonar@main/install.sh | bash
+curl -fsSL https://gcore.jsdelivr.net/gh/tomlen045/ctsonar@main/install.sh | bash
 ```
 
 ## 用法

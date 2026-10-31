@@ -24,7 +24,7 @@ echo exit=$?    # 1 = high-risk change
 ```bash
 python3 ctsonar.py scan
 # or one-liner install
-curl -fsSL https://gcore.jsdelivr.net/gh/tomlen/ctsonar@main/install.sh | bash
+curl -fsSL https://gcore.jsdelivr.net/gh/tomlen045/ctsonar@main/install.sh | bash
 ```
 
 ## Commands
